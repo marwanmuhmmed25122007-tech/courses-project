@@ -18,11 +18,6 @@ body {
     height: 100vh;
 }
 
-main {
-    flex: 1;
-}
-
-
 
 a {
     text-decoration: none;
@@ -60,6 +55,44 @@ ul {
 .btn-primary:hover {
     transform: translateY(2px);
     box-shadow: 0 4px 20px rgba(13, 92, 110, 0.22);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.form-label {
+    font-size: 0.83rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid #dde0d8;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #aaaaaa;
+}
+
+.form-input:hover,
+.form-textarea:hover {
+    border-color: #0d5c6e;
 }
 
 
@@ -412,46 +445,7 @@ footer {
     margin-right: auto;
 }
 
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-bottom: 20px;
-}
 
-
-.form-label {
-    font-size: 0.83rem;
-    font-weight: 600;
-    color: #1a1a1a;
-}
-
-.form-input,
-.form-textarea {
-    width: 100%;
-    padding: 11px 14px;
-    border: 1.5px solid #dde0d8;
-    border-radius: 6px;
-    background-color: #ffffff;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.9rem;
-    color: #1a1a1a;
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.form-input::placeholder,
-.form-textarea::placeholder {
-    color: #aaaaaa;
-}
-
-.form-input:hover,
-.form-textarea:hover {
-    border-color: #0d5c6e;
-    box-shadow: 0 0 0 3px rgba(13, 92, 110, 0.10);
-}
 
 .form-textarea {
     height: 130px;
@@ -871,12 +865,12 @@ footer {
     border: 1px solid #dde0d8;
     border-radius: 16px;
     padding: 24px;
-    box-shadow: rgba(13, 92, 110, 0.16) 0 8px 40px;
     transition: all 0.25s ease;
 }
 
 .inquiry-card:hover {
-    transform: scale(1.05);
+    transform: translateY(2px);
+    box-shadow: rgba(13, 92, 110, 0.08) 0px 7px 29px 0px;
 }
 
 
