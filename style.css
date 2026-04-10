@@ -737,7 +737,7 @@ footer {
     justify-content: center;
 }
 
-.contact-page-header p {
+.contact-page-header span {
     color: #5c5c5c;
     width: 540px;
 }
