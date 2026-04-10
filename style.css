@@ -27,6 +27,10 @@ ul {
     list-style: none;
 }
 
+textarea {
+    resize: none;
+}
+
 
 .container {
     width: 100%;
