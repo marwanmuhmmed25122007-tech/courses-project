@@ -1095,12 +1095,19 @@ footer {
         gap: 20px;
     }
 
-
     .td-credits {
         display: none;
     }
 
-    .courses-table thead .credit {
+    .courses-table thead .Credit {
+        display: none;
+    }
+
+    .td-action {
+        display: none;
+    }
+
+    .courses-table thead .action {
         display: none;
     }
 
