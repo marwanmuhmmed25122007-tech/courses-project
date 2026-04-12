@@ -950,3 +950,185 @@ footer {
     font-size: 0.86rem;
     color: #5c5c5c;
 }
+
+/* Responsive */
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    /* Container */
+    .container {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 12px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+        padding: 6px 10px;
+    }
+
+    /* ── Footer ── */
+    .footer-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    /* ── Home · Hero ── */
+    .hero {
+        padding: 36px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        width: 100%;
+    }
+
+    /* ── Home · Features ── */
+    .features {
+        padding: 32px;
+    }
+
+    .bento-grid {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    /* ── Home · CTA ── */
+    .cta-banner {
+        padding: 48px;
+    }
+
+    .cta-banner h2 {
+        font-size: 1.4rem;
+    }
+
+    .cta-actions {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    /* ── Add Page ── */
+    .add-hero {
+        padding: 28px;
+    }
+
+    .add-hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .add-hero-grid h1 {
+        font-size: 1.8rem;
+    }
+
+    .add-hero-grid p {
+        width: 100%;
+    }
+
+    .form-section {
+        padding: 16px;
+    }
+
+    .form-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .feature-trio {
+        grid-template-columns: 1fr;
+    }
+
+    .feat-card {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    /* ── My Courses ── */
+    .page-header {
+        padding: 24px;
+    }
+
+    .page-header-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .page-header p {
+        width: 100%;
+    }
+
+    .page-header-actions {
+        margin-top: 10px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    .td-credits {
+        display: none;
+    }
+
+    .courses-table thead .credit {
+        display: none;
+    }
+
+    /* ── Contact ── */
+    .contact-page-header {
+        padding: 28px;
+        text-align: center;
+    }
+
+    .contact-page-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .contact-page-header span {
+        width: 100%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .info-card {
+        height: auto;
+    }
+
+    .inquiry-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
