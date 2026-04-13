@@ -362,13 +362,6 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.9rem;
     color: #083f4d;
-    margin-bottom: 12px;
-}
-
-.cta-banner p {
-    color: #5c5c5c;
-    max-width: 480px;
-    margin: auto;
     margin-bottom: 30px;
 }
 
