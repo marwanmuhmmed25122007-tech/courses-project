@@ -7,7 +7,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     scrollbar-width: none;
 }
 
@@ -34,36 +33,12 @@ textarea {
 
 .container {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.btn-primary {
-    gap: 8px;
-    padding: 16px;
-    background-color: #0d5c6e;
-    color: #ffffff;
-    border: 2px solid #0d5c6e;
-    border-radius: 8px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.25s ease;
-}
-
-
-.btn-primary:hover {
-    transform: translateY(2px);
-    box-shadow: 0 4px 20px rgba(13, 92, 110, 0.22);
-}
 
 .form-row {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
     margin-bottom: 20px;
 }
 
@@ -88,8 +63,8 @@ textarea {
     transition: all 0.25 ease;
 }
 
-.form input::placeholder,
-.form textarea::placeholder {
+.form-input::placeholder,
+.form-textarea::placeholder {
     color: #aaaaaa;
 }
 
@@ -136,7 +111,7 @@ header {
 }
 
 .nav-links a {
-    padding: 7px 14px;
+    padding: 10px;
     border-radius: 6px;
     font-size: 0.88rem;
     font-weight: 500;
@@ -150,12 +125,6 @@ header {
 }
 
 
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
 .nav-icon {
     width: 36px;
@@ -250,13 +219,13 @@ footer {
 }
 
 
-.hero-cta {
+.hero-icon {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.hero-cta a {
+.hero-icon a {
     padding: 12px 24px;
     border-radius: 8px;
     font-size: 0.95rem;
@@ -266,12 +235,12 @@ footer {
     transition: 0.25s ease;
 }
 
-.hero-cta a:hover {
+.hero-icon a:hover {
     background-color: #083f4d;
     color: #e6f2f5;
 }
 
-.hero-image-wrap {
+.hero-images {
     border-radius: 16px;
 }
 
@@ -279,7 +248,6 @@ footer {
     width: 100%;
     height: 340px;
     border-radius: 16px;
-    object-fit: cover;
 }
 
 
@@ -304,13 +272,13 @@ footer {
     color: #5c5c5c;
 }
 
-.bento-grid {
+.features-grid {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
 }
 
-.bento-card {
+.features-cards {
     background-color: #ffffff;
     border: 1px solid #dde0d8;
     border-radius: 16px;
@@ -318,12 +286,12 @@ footer {
     transition: 0.25s ease;
 }
 
-.bento-card:hover {
+.features-cards:hover {
     transform: scale(1.05);
     box-shadow: rgba(13, 92, 110, 0.16) 0px 4px 12px;
 }
 
-.bento-icon {
+.feature-icon {
     width: 42px;
     height: 42px;
     background-color: #e6f2f5;
@@ -335,45 +303,40 @@ footer {
     margin-bottom: 16px;
 }
 
-.bento-card h3 {
+.features-cards h3 {
     font-size: 1.05rem;
     color: #083f4d;
     margin-bottom: 8px;
 }
 
-.bento-card p {
+.features-cards p {
     font-size: 0.88rem;
     color: #5c5c5c;
 }
 
-.bento-card-dark p {
-    color: rgba(255, 255, 255, 0.82);
-}
 
-/* CTA Banner */
-
-.cta-banner {
+.course-start {
     background-color: #ffffff;
     padding: 100px;
     text-align: center;
 }
 
-.cta-banner h2 {
+.course-start h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.9rem;
     color: #083f4d;
     margin-bottom: 30px;
 }
 
-.cta-actions {
+.course-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
 
-.cta-actions a {
-    padding: 12px 24px;
+.course-actions a {
+    padding: 16px;
     border-radius: 8px;
     font-weight: 500;
     color: #ffffff;
@@ -381,7 +344,7 @@ footer {
     transition: 0.25s ease;
 }
 
-.cta-actions a:hover {
+.course-actions a:hover {
     background-color: #083f4d;
     box-shadow: rgba(13, 92, 110, 0.16) 20px 5px 20px;
 }
@@ -389,14 +352,22 @@ footer {
 /* add page */
 
 .add-hero {
-    padding: 48px;
+    padding: 55px;
 }
 
-.add-hero-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 350px;
+
+.add-header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    color: #083f4d;
+    margin-bottom: 12px;
 }
+
+.add-header p {
+    color: #5c5c5c;
+    width: 420px;
+}
+
 
 .label {
     display: inline-block;
@@ -408,25 +379,9 @@ footer {
     background-color: #e6f2f5;
     padding: 4px 12px;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.add-hero-grid h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5rem;
-    color: #083f4d;
-    margin-bottom: 12px;
-}
-
-.add-hero-grid p {
-    color: #5c5c5c;
-    width: 420px;
-}
-
-
-.form-section {
-    padding: 36px;
-}
 
 .form-card {
     background-color: #ffffff;
@@ -435,8 +390,7 @@ footer {
     padding: 30px;
     width: 720px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 
@@ -446,20 +400,39 @@ footer {
 
 .form-footer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 24px;
 }
 
+.btn-primary {
+    gap: 8px;
+    padding: 16px;
+    background-color: #0d5c6e;
+    color: #ffffff;
+    border: 2px solid #0d5c6e;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
 
-.feature-trio {
+
+.btn-primary:hover {
+    transform: translateY(2px);
+    box-shadow: 0 4px 20px rgba(13, 92, 110, 0.22);
+}
+
+
+.feature-two {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.feat-card {
+.feat-cards {
     background-color: #ffffff;
     border: 1px solid #dde0d8;
     border-radius: 16px;
@@ -469,7 +442,7 @@ footer {
     margin-bottom: 70px;
 }
 
-.feat-card:hover {
+.feat-cards:hover {
     transform: translateY(2px);
     box-shadow: rgba(13, 92, 110, 0.08) 0px 7px 29px 0px;
 }
@@ -487,13 +460,13 @@ footer {
     margin-bottom: 14px;
 }
 
-.feat-card h3 {
+.feat-cards h3 {
     font-size: 1rem;
     color: #083f4d;
     margin-bottom: 6px;
 }
 
-.feat-card p {
+.feat-cards p {
     font-size: 0.86rem;
     color: #5c5c5c;
 }
@@ -505,7 +478,7 @@ footer {
     padding: 50px;
 }
 
-.page-header-inner {
+.page-header-in {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 20px;
@@ -529,7 +502,7 @@ footer {
     padding: 16px;
     background-color: #0d5c6e;
     color: #ffffff;
-    border: 2px solid #0d5c6e;
+    border: 1px solid #0d5c6e;
     border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
@@ -572,9 +545,6 @@ footer {
     color: #4B5563;
 }
 
-.card-value-container {
-    gap: 10px;
-}
 
 .card-number {
     font-size: 42px;
@@ -628,7 +598,7 @@ footer {
 
 /*  Table in my courses */
 
-.table-wrapper {
+.table {
     background-color: #ffffff;
     border: 1px solid #dde0d8;
     border-radius: 16px;
@@ -640,9 +610,6 @@ footer {
     width: 100%;
 }
 
-.courses-table thead {
-    border-bottom: 1px solid #dde0d8;
-}
 
 .courses-table thead th {
     padding: 20px;
@@ -669,7 +636,7 @@ footer {
     color: #1a1a1a;
 }
 
-.td-name-cell {
+.td-course {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -698,7 +665,7 @@ footer {
 }
 
 
-.pagination {
+.table-links {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -707,7 +674,7 @@ footer {
     color: #5c5c5c;
 }
 
-.pagination-buttons {
+.table-buttons {
     display: flex;
     gap: 6px;
 }
@@ -806,7 +773,7 @@ footer {
 }
 
 .contact-detail i {
-    width: 16px;
+    width: 20px;
 }
 
 .social-row {
@@ -864,7 +831,7 @@ footer {
     background-color: #083f4d;
 }
 
-.inquiries-section {
+/* .inquiries-section {
     padding-bottom: 60px;
 }
 
@@ -920,7 +887,7 @@ footer {
 .inquiry-card p {
     font-size: 0.86rem;
     color: #5c5c5c;
-}
+} */
 
 /* Responsive */
 
@@ -964,7 +931,7 @@ footer {
         gap: 4px;
     }
 
-    /* ── Home · Hero ── */
+
     .hero {
         padding: 36px;
     }
@@ -982,26 +949,26 @@ footer {
         width: 100%;
     }
 
-    /* ── Home · Features ── */
+
     .features {
         padding: 32px;
     }
 
-    .bento-grid {
+    .features-grid {
         display: grid;
         grid-template-rows: 1fr;
     }
 
-    /* ── Home · CTA ── */
-    .cta-banner {
+
+    .ccourse-start {
         padding: 48px;
     }
 
-    .cta-banner h2 {
+    .course-start h2 {
         font-size: 1.4rem;
     }
 
-    .cta-actions {
+    .course-actions {
         display: grid;
         grid-template-rows: 1fr;
     }
@@ -1011,7 +978,7 @@ footer {
         padding: 24px;
     }
 
-    .page-header-inner {
+    .page-header-in {
         grid-template-columns: 1fr;
     }
 
@@ -1045,35 +1012,26 @@ footer {
         padding: 28px;
     }
 
-    .add-hero-grid {
+    .add-header {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .add-hero-grid h1 {
+    .add-header h1 {
         font-size: 1.8rem;
     }
 
-    .add-hero-grid p {
+    .add-header p {
         width: 100%;
-    }
-
-    .form-section {
-        padding: 16px;
-    }
-
-    .feature-trio {
-        display: grid;
-        grid-template-columns: 1fr;
     }
 
     .form-card {
         width: 100%;
     }
 
-    .feat-card {
-        margin-top: 40px;
-        margin-bottom: 60px;
+    .feature-two {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
 
@@ -1099,11 +1057,6 @@ footer {
     .info-card {
         height: auto;
     }
-
-    .inquiry-grid {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1125,7 +1078,7 @@ footer {
         padding: 6px 10px;
     }
 
-    /* ── Home · Hero ── */
+
     .hero {
         padding: 56px;
     }
@@ -1138,13 +1091,12 @@ footer {
         font-size: 2rem;
     }
 
-    /* ── Home · Features ── */
+
     .features {
         padding: 40px;
     }
 
-    /* ── Home · CTA ── */
-    .cta-banner {
+    .course-start {
         padding: 64px;
     }
 
@@ -1162,7 +1114,7 @@ footer {
         gap: 20px;
     }
 
-    .table-wrapper {
+    .table {
         margin-bottom: 115px;
     }
 
@@ -1171,11 +1123,11 @@ footer {
         padding: 32px 0;
     }
 
-    .add-hero-grid {
+    .add-header {
         gap: 40px;
     }
 
-    .add-hero-grid p {
+    .add-header p {
         width: 100%;
     }
 
@@ -1183,16 +1135,11 @@ footer {
         width: 90%;
     }
 
-    .feature-trio {
+    .feature-two {
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;
         gap: 20px;
         margin: auto;
-    }
-
-    .feat-card {
-        margin-top: 20px;
-        margin-bottom: 30px;
     }
 
 
@@ -1208,15 +1155,12 @@ footer {
 
     .contact-grid {
         padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
     }
 
-
-    .inquiry-grid {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-    }
-
-    .inquiry-card {
-        margin-bottom: 20px;
+    .contact-form-card {
+        margin-bottom: 235px;
     }
 }
